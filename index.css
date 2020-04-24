@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider  figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(70%);
+    float: left;
+}
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 20s infinite;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5em;
+    font-family: 'Domine', serif;
+    letter-spacing: 0.2em;
+}
+
+h1 span{
+    display: inline-block;
+    animation: animateletras 6s infinite forwards;
+}
+
+@keyframes animateletras {
+    0%{
+        opacity: 0.5;
+        transform:rotateY(90deg);
+        filter: blur(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0)
+    }
+}
+    h1 span:nth-child(1){
+        animation-delay: 1s;
+    }
+    h1 span:nth-child(2){
+        animation-delay: 1.5s;
+    }
+    h1 span:nth-child(3){
+        animation-delay: 2s;
+    }
+    h1 span:nth-child(4){
+        animation-delay: 2.5s;
+    }
+    h1 span:nth-child(5){
+        animation-delay: 3s;
+    }
+    h1 span:nth-child(6){
+        animation-delay: 3.5s;
+    }
+    h1 span:nth-child(1){
+        animation-delay: 1s;
+    }
+    h1 span:nth-child(2){
+        animation-delay: 1.5s;
+    }
+    h1 span:nth-child(3){
+        animation-delay: 2s;
+    }
+    h1 span:nth-child(4){
+        animation-delay: 2.5s;
+    }
+    h1 span:nth-child(5){
+        animation-delay: 3s;
+    }
+    h1 span:nth-child(6){
+        animation-delay: 3.5s;
+    }
+    h1 span:nth-child(7){
+        animation-delay: 4s;
+    }h1 span:nth-child(8){
+        animation-delay: 4.5s;
+    }
+
+
+@keyframes animate{
+
+    0%{left: 0%;}
+    10%{left: 0%;}
+    30%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -300%;}
+    90%{left: -400%;}
+    98%{left:0%;}
+
+}
